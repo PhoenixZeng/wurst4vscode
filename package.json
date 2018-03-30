@@ -88,6 +88,11 @@
         "command": "wurst.buildmap",
         "title": "Build your map via wurst.build (into /_build)",
         "category": "wurst"
+      },
+      {
+        "command": "wurst.custom_command",
+        "title": "Build your map with a custom command",
+        "category": "wurst"
       }
     ],
     "keybindings": {
@@ -129,6 +134,16 @@
           "type": "string",
           "default": null,
           "description": "The path to your Frozen Throne installation directory."
+        },
+        "wurst.apppath": {
+          "type": "string",
+          "default": null,
+          "description": "The path to your custom app path."
+        },
+        "wurst.command": {
+          "type": "string",
+          "default": null,
+          "description": "the custom command,$APP = apppath ,$MAP = mapPath."
         }
       }
     }
