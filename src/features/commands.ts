@@ -104,7 +104,7 @@ export function registerCommands(client: LanguageClient): vscode.Disposable {
 			command: "wurst.custom_command",
 			arguments: [{
 				'mappath': mappath,
-				'wc3path': wc3path,
+				'apppath': apppath,
 				'command': command
 			}]
 		};
