@@ -16,8 +16,8 @@ function onDocumentOpen(td: TextDocument) {
 	let packageName = basename(td.fileName, extension);
 	let newText = `package ${packageName}\n\n`;
 
-	let edit = new WorkspaceEdit()
-	edit.insert(td.uri, new Position(1,1), newText)
+	let edit = new WorkspaceEdit();
+	edit.insert(td.uri, new Position(1,1), newText);
 	workspace.applyEdit(edit);
 
 
